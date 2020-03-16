@@ -1,18 +1,21 @@
 {
   "name": "mcbbs-markdown2bbcode-converter",
   "author": "ustc-zzzz",
+  "contributors": [
+    "IzzelAliz"
+  ],
   "version": "0.2.0",
   "main": "index.js",
   "description": "The frontend of what converts Github Flavored Markdown to MCBBS Flavored BBCode",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter.git"
+    "url": "git+https://github.com/IzzelAliz/mcbbs-markdown2bbcode-converter.git"
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter/issues"
+    "url": "https://github.com/IzzelAliz/mcbbs-markdown2bbcode-converter/issues"
   },
-  "homepage": "https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter#readme",
+  "homepage": "https://github.com/IzzelAliz/mcbbs-markdown2bbcode-converter#readme",
   "dependencies": {
     "@types/clipboard": "^2.0.1",
     "@types/marked": "^0.6.5",

@@ -87,6 +87,10 @@ function Config(props: ConfigProps) {
           (Github:&nbsp;<AuthorGitHub />,&nbsp;MCBBS:&nbsp;<AuthorMCBBS />).
         </p>
         <p>
+          Contributor:&nbsp;IzzelAliz
+          (Github:&nbsp;<ContributorGitHub />,&nbsp;MCBBS:&nbsp;<ContributorMCBBS />).
+        </p>
+        <p>
           Source Code on <SourceCodeGitHub />, under <SourceCodeLicense />.
         </p>
         <p>
@@ -175,13 +179,22 @@ function AuthorMCBBS(props: {}) {
   return <AboutLink href={href}>@ustc_zzzz</AboutLink>
 }
 
+function ContributorGitHub(props: {}) {
+  return <AboutLink href='https://github.com/IzzelAliz'>@IzzelAliz</AboutLink>
+}
+
+function ContributorMCBBS(props: {}) {
+  const href = 'https://www.mcbbs.net/?1196990'
+  return <AboutLink href={href}>@海螺螺</AboutLink>
+}
+
 function SourceCodeGitHub(props: {}) {
-  const href = 'https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter'
+  const href = 'https://github.com/IzzelAliz/mcbbs-markdown2bbcode-converter'
   return <AboutLink href={href}>GitHub</AboutLink>
 }
 
 function SourceCodeLicense(props: {}) {
-  const href = 'https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter/blob/master/LICENSE'
+  const href = 'https://github.com/IzzelAliz/mcbbs-markdown2bbcode-converter/blob/master/LICENSE'
   return <AboutLink href={href}>GPL-3.0 License</AboutLink>
 }
 
