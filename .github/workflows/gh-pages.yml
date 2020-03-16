@@ -19,8 +19,11 @@ jobs:
     - run: echo -n $GITHUB_TOKEN | sha256sum
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.3.0
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
       with:
         committer_name: Travis CI Deployment Bot
         committer_email: deploy@travis-ci.org
         fqdn: mm2bc.izzel.io
         build_dir: build/
+
