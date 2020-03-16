@@ -1,0 +1,26 @@
+name: GitHub Pages
+on:
+  push:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [8.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build
+    - run: echo -n $GITHUB_TOKEN | sha256sum
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v1.3.0
+      with:
+        committer_name: Travis CI Deployment Bot
+        committer_email: deploy@travis-ci.org
+        fqdn: mm2bc.izzel.io
+        build_dir: build/
