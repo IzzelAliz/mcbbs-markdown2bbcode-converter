@@ -31,8 +31,8 @@ const textObject = { text: '' }
 
 const muiTheme = Styles.getMuiTheme({
   palette: {
-    primary1Color: Styles.colors.green700,
-    primary2Color: Styles.colors.green700,
+    primary1Color: Styles.colors.pinkA200,
+    primary2Color: Styles.colors.pinkA200,
     primary3Color: Styles.colors.grey600
   },
   appBar: {
